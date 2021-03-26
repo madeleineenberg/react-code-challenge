@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function navigation() {
   return (
@@ -7,21 +7,36 @@ export default function navigation() {
       <nav className='navigation'>
         <ul className='nav-menu'>
           <li className='nav-menu__item'>
-            <Link to='/' className='menu-link'>
+            <NavLink to='/' className='menu-link' activeClassName='active'>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className='nav-menu__item'>
-            <Link to='/career' className='menu-link'>
+            <NavLink
+              to='/career'
+              className='menu-link'
+              activeClassName='active'
+            >
               Career
-            </Link>
+            </NavLink>
           </li>
           <li className='nav-menu__item'>
-            <Link to='/about' className='menu-link'>
+            <NavLink to='/about' className='menu-link' activeClassName='active'>
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
+        <div className='nav-button-group'>
+          <div className='nav-button'>
+            <button>Partners</button>
+          </div>
+          <div className='nav-search'>
+            <i className='icon-search' />
+          </div>
+        </div>
+        <div className='nav-cart'>
+          <i className='icon-basket' />
+        </div>
       </nav>
     </Fragment>
   );
