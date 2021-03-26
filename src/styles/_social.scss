@@ -1,0 +1,34 @@
+.social {
+  padding: 4%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+  }
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.icon-facebook,
+.icon-instagram,
+.icon-linkedin {
+  color: $white;
+  font-size: 22px;
+}
+.socail__icons {
+  display: flex;
+  padding: 20px 0;
+
+  @media screen and (min-width: $laptop) {
+    padding: 0;
+  }
+}

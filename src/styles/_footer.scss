@@ -1,0 +1,94 @@
+footer {
+  padding: 10% 0;
+  background-color: $primary-color;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  @media screen and (min-width: $laptop) {
+    padding: 10% 5%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.bottom-nav-wrapper {
+  position: relative;
+  padding: 3%;
+  width: 100%;
+  border-bottom: 2px solid $white;
+  transition: all 0.4s ease;
+
+  @media screen and (min-width: $laptop) {
+    width: 200px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: $dark-gray;
+  }
+  ul {
+    list-style: none;
+
+    @media screen and (max-width: $laptop) {
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      padding: 8px 0;
+      color: $dark-gray;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:before {
+        content: '• ';
+        color: $green;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: -20px;
+      }
+    }
+  }
+
+  .icon-angle-up,
+  .icon-angle-down {
+    position: absolute;
+    right: 20px;
+    color: $white;
+    font-size: 22px;
+
+    @media screen and (min-width: $laptop) {
+      display: none;
+    }
+  }
+}
+
+.image-wrapper {
+  align-self: flex-end;
+  padding-right: 20px;
+
+  @media screen and (min-width: $laptop) {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .bottom-nav-wrapper.close {
+    ul > li {
+      display: none;
+    }
+  }
+}
