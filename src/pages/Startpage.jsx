@@ -1,5 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Categories from '../components/Categories';
+import Hero from '../components/Hero';
 
 export default function Startpage() {
-  return <div>Startpage</div>;
+  return (
+    <Fragment>
+      <Hero />
+      <Categories />
+    </Fragment>
+  );
 }
