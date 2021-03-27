@@ -4,6 +4,7 @@ import happycard from '../images/Happicard.png';
 import ngo from '../images/NGO.png';
 
 export default function Categories() {
+  //renders the category section
   return (
     <section className='category-section'>
       <div className='category-section__item'>

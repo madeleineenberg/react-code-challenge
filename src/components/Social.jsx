@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Social() {
+  //render social bar on the bottom of footer
   return (
     <div className='social'>
       <span>&copy;2021 All Rights Reserved</span>

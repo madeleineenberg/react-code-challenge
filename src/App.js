@@ -9,6 +9,8 @@ import Career from './pages/Career';
 import Startpage from './pages/Startpage';
 
 function App() {
+
+  //Routes to all the pages
   return (
     <Switch>
       

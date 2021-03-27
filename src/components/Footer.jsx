@@ -5,6 +5,7 @@ import Form from './Form';
 import Social from './Social';
 
 export default function Footer() {
+  //renders all footer components
   return (
     <Fragment>
       <footer>

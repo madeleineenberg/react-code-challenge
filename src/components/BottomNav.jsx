@@ -2,6 +2,10 @@ import React, { Fragment } from 'react';
 import ToggleClass from './ToggleClass';
 
 export default function BottomNav() {
+  //renders bottom navigation
+  //and toggles a classname with <ToggleClass> to get
+  //the resposive design.
+
   return (
     <Fragment>
       <ToggleClass>
